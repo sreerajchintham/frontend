@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My School Chatbot</title>
+    <img src : "/Users/raj/Downloads/sfc-logo.png" 
+  </head>
+  <body>
+    <h1>Welcome to St. Francis Chatbot</h1>
+    <p>Ask any question about the college below.</p>
+    <input type="text" placeholder="Type your question..." />
+    <button>Ask</button>
+  </body>
+</html>
+<style>
+    body {
+      font-family: Arial;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+  
+    h1 {
+      color: navy;
+    }
+  
+    input {
+      width: 300px;
+      padding: 10px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      background-color: navy;
+      color: white;
+      border: none;
+    }
+  </style>
+  
+  <script>
+    const button = document.querySelector("button");
+    const input = document.querySelector("input");
+  
+    button.addEventListener("click", () => {
+      const question = input.value;
+      alert("You asked: " + question);
+    });
+  </script>
